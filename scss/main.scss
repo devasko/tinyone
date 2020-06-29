@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+@import "reset";
+@import "core";
+@import "fonts";
+@import "variables";
+@import "mixins";
+
+h1 {
+    text-align: center;
+}
