@@ -35,6 +35,7 @@ $( document ).ready( function()   {
         });
     });
 
+    
     //  Scroll up button
 
     const scrollUp = $( '.scroll-up' );
@@ -48,9 +49,9 @@ $( document ).ready( function()   {
         }
 
         if ( window.pageYOffset > 5200 ) {
-            $( '.scroll-up' ).css( { 'color': '#fff', 'border-color': '#fff'} );
+            scrollUp.css( { 'color': '#fff', 'border-color': '#fff'} );
         } else {
-            $( '.scroll-up' ).css( { 'color': '#000', 'border-color': '#000'} );
+            scrollUp.css( { 'color': '#000', 'border-color': '#000'} );
         }
     } );
 
