@@ -1,5 +1,16 @@
 $( document ).ready( function()   {
 
+    //  Основное меню хэдера
+
+    $( '.header-menu__burger' ).on( 'click', function ( event ) {
+        event.preventDefault();
+        $( this ).toggleClass( 'active' );
+    } );
+
+
+    //  Слайдер отзывов
+
+
     $( '.testimonials' ).owlCarousel({
         loop: true,
         margin: 0,
@@ -21,7 +32,7 @@ $( document ).ready( function()   {
     });
 
 
-//  Scroll down button
+//  Кнопка прокрутки вниз
 
     const scrollDown = document.querySelector( '.header__scroll a' );
 
@@ -35,8 +46,8 @@ $( document ).ready( function()   {
         });
     });
 
-    
-    //  Scroll up button
+
+//  Кнопка прокрутки вверх
 
     const scrollUp = $( '.scroll-up' );
 
@@ -56,6 +67,6 @@ $( document ).ready( function()   {
     } );
 
     scrollUp.click( () => {
-        $( window ).scrollTo( 0, 0 );
+        $( window ).scrollTop( 0, 0 );
     } );
 });
